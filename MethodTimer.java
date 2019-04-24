@@ -1,8 +1,24 @@
-//Jonathon Lefler
+/*Jonathon Lefler
+The purpose of this project is to compare different sorting algorithms
+against eachother for various data types. Eventually, it will create a 
+usefullness graph for each. I'll also compare the program against different
+languages to check perfermance between them. I suspect the higher level langauges
+will be slower.
+*/
+
 
 import java.util.Scanner;
 
 public class MethodTimer {
+    /**
+     * Runs a given sorting algorithm and prints out times for
+     * different array sizes. For the average case, we make 
+     * {sampleSize} unique arrays to get an average.
+     * Best case: already in the correct order
+     * Worst case: in reverse order
+     * 
+     * Cmd list is in for debugging and development
+     */
     public static void main(String[] args){
         MethodTimer timer = new MethodTimer();
         Scanner input = new Scanner(System.in);
